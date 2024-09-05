@@ -67,7 +67,7 @@ const login = ref('active')
 }
 label {
   color: #000;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
