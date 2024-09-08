@@ -65,10 +65,48 @@
 }
 
 .ma-container {
-    width: 90%;
+    width: 93%;
     margin: 0 auto;
-    /*border: 1px dotted yellowgreen;*/
+    /*border: 2px dotted red;*/
 }
 .maTop {
     margin-top: 3%;
+}
+.sectionTextH {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+.sectionTextP {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 3%;
+}
+.sectionTextB {
+    text-align: center;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    line-height: normal;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), /* bottom shadow */
+    0 -4px 6px rgba(0, 0, 0, 0.05), /* top shadow */
+    4px 0 6px rgba(0, 0, 0, 0.05), /* right shadow */
+    -4px 0 6px rgba(0, 0, 0, 0.05); /* left shadow */
+}
+.sectionTextB:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
+    0 -6px 10px rgba(0, 0, 0, 0.1),
+    6px 0 10px rgba(0, 0, 0, 0.1),
+    -6px 0 10px rgba(0, 0, 0, 0.1);
 }

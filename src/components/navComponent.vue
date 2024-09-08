@@ -1,7 +1,7 @@
 <template>
   <div class="ma-container">
   <div class="navContainer d-flex justify-space-between align-center" >
-    <div class="navLogo"><img :src="logo" alt="" srcset=""  width="200px" height="70px"></div>
+    <div class="navLogo"><img :src="logo" alt="" srcset=""  width="200px" height="85px"></div>
     <div class="d-flex justify-start align-center  navLinkContainer">
       <span><router-link to="" class="inria-sans-regular navLink">shop</router-link></span>
       <span> <router-link to="" class="inria-sans-regular navLink">about us</router-link> </span>
@@ -27,11 +27,12 @@ import logo from "../assets/img/logo.png"
   padding-top: 23px;
   .navLogo {
     width:20% ;
-    //border: 1px solid grey;
+    border: 1px solid grey;
   }
   .navLinkContainer {
     width:60% ;
     //border: 1px dotted blue;
+    padding: 0 40px;
     .navLink {
       color: #000;
       text-align: center;
@@ -46,12 +47,13 @@ import logo from "../assets/img/logo.png"
   }
   .navButton {
     width:15% ;
-    //border: 1px solid orange;
+    border: 1px solid orange;
     .lr-button {
       width: 100%;
       flex-shrink: 0;
       border-radius: 39px;
       background: #fff;
+      border: 1px solid #000;
       color: #000;
       text-align: center;
       font-style: normal;
