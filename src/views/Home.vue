@@ -1,7 +1,7 @@
 <template>
   <div class="landingContainer">
     <nav-component></nav-component>
-    <div class="circle1 position-absolute" v-for="item in bubble" :key="item.sn" :style="{top: item.top, left:item.left}" ><img :src="vector1" alt="vector1" srcset="" :width="item.width" :height="item.height">  </div>
+    <div class="circle1 position-absolute animate__animated" data-aos="fade-down"  v-for="item in bubble" :key="item.sn" :style="{top: item.top, left:item.left}" ><img :src="vector1" alt="vector1" srcset="" class="animate__animated rotatehover"   :width="item.width" :height="item.height">  </div>
 
     <div class="d-flex justify-space-between align-center ma-container" style="padding: 50px 0" >
       <div class="landingTextContainer">  <h2 class="atkinson-hyperlegible-bold">Experience The Future Of Mobile Technology</h2>
@@ -73,9 +73,12 @@
       </div>
     </div>
   </div>
+  <footer-component></footer-component>
 </template>
 
 <script setup>
+import 'animate.css';
+
 import NavComponent from "@/components/navComponent.vue";
 import vector1 from "../assets/img/circle1.svg"
 import phone1 from "../assets/img/phone1.png"
@@ -84,6 +87,7 @@ import phone3 from "../assets/img/phone3.png"
 import iwatch from "../assets/img/watch.png"
 import arrow from "../assets/img/Arrow.png"
 import { ref } from 'vue'
+import FooterComponent from '@/components/footerComponent.vue'
 
 
 const bubble = ref([
@@ -93,6 +97,14 @@ const bubble = ref([
   {width: '54px', height: '54px',top: '329px', left: '1200px', sn: 4},
   {width: '35px', height: '35px',top: '690px', left: '66px', sn: 5},
   {width: '45px', height: '45px',top: '821px', left: '473px' , sn: 6},
+  {width: '55px', height: '55px',top: '985px', left: '897px' , sn: 7},
+  {width: '40px', height: '40px',top: '1452px', left: '700px' , sn: 8},
+  {width: '55px', height: '55px',top: '1560px', left: '239px' , sn: 9},
+  {width: '35px', height: '35px',top: '1700px', left: '780px' , sn: 10},
+  {width: '35px', height: '35px',top: '2050px', left: '400px' , sn: 11},
+  {width: '55px', height: '55px',top: '2200px', left: '890px' , sn: 12},
+  {width: '35px', height: '35px',top: '2300px', left: '50px' , sn: 13},
+  {width: '30px', height: '30px',top: '2400px', left: '550px' , sn: 14},
 ])
 
 </script>
@@ -105,9 +117,11 @@ const bubble = ref([
   background: linear-gradient(180deg, #52B788 9.5%, rgba(82, 183, 136, 0.75) 31%, #52B788 57%, #306B50 78%, #000 100%);
   position: relative;
   .circle1 {
-    position: absolute;
-    top: 109px;
-    left: 339px;
+    position: absolute !important;
+    transition: 2.5s !important;
+  }
+  .circle1:hover {
+    transform: rotate(360deg) !important;
   }
 
   .landingTextContainer{

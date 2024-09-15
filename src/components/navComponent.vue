@@ -27,7 +27,7 @@ import logo from "../assets/img/logo.png"
   padding-top: 23px;
   .navLogo {
     width:20% ;
-    border: 1px solid grey;
+    //border: 1px solid grey;
   }
   .navLinkContainer {
     width:60% ;
@@ -47,7 +47,7 @@ import logo from "../assets/img/logo.png"
   }
   .navButton {
     width:15% ;
-    border: 1px solid orange;
+    //border: 1px solid orange;
     .lr-button {
       width: 100%;
       flex-shrink: 0;
